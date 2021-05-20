@@ -1,0 +1,46 @@
+@import './mixins.scss';
+@import './overrides.scss';
+@import '@carbon/type/scss/font-family';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+.landing-page__illo {
+  max-width: 100%;
+}
+
+.landing-page__banner {
+  padding-top: 32px;
+  padding-bottom: 128px;
+  @include landing-page-background;
+}
+.landing-page__heading {
+  padding-top: 32px;
+}
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
+.landing-page__tab-content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.landing-page__subheading {
+  padding-top: 32px;
+  @include carbon--font-weight('semibold');
+}
+.landing-page__p {
+  padding-top: 32px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.landing-page__r3 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @include landing-page-background;
+}
+
+.landing-page__label {
+  padding-top: 8px;
+}
